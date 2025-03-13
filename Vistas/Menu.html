@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/principal.css">
+    <title>Menu</title>
+</head>
+<body>
+   
+    <!-- Encabezado -->
+    <header>
+        <div class="img">
+            <img src="/Imagenes/img1.png" alt="Imagen 4">
+            <!-- Contenido central -->
+        </div>
+    </header>
+    <!-- Contenido central -->
+    <main>
+        <div class="container">
+            <h2 class="text-center title-design">Menu</h2>            
+          <!-- HTML modificado -->
+<div class="gallery-container">
+    <div class="gallery-item" onclick="irAPagina('/Vistas/registros.html')">
+        <div class="image-wrapper">
+            <img src="/Imagenes/documento.png" alt="Imagen 1">
+        </div>
+        <h5>Registros</h5>
+        <div class="hover-overlay"></div>
+    </div>
+    <div class="gallery-item" onclick="irAPagina('/Vistas/tablas.html')">
+        <div class="image-wrapper">
+            <img src="/Imagenes/informe.png" alt="Imagen 2">
+        </div>
+        <h5>Reportes</h5>
+        <div class="hover-overlay"></div>
+    </div>
+    <div class="gallery-item" onclick="irAPagina('/Vistas/Altas_empleados.html')">
+        <div class="image-wrapper">
+            <img src="/Imagenes/agregar.png" alt="Imagen 3">
+        </div>
+        <h5>Agregar Usuario</h5>
+        <div class="hover-overlay"></div>
+    </div>
+</div>
+            
+            <!-- Segunda fila de imágenes -->
+            <div class="gallery-container mt-4">
+                <div class="gallery-item" onclick="irAPagina('/Vistas/Alta_pacientes.html')">
+                    <img src="/Imagenes/pacient.png" alt="Imagen 4">
+                    <h5>Agregar paciente</h5>
+                </div>
+                <div class="gallery-item" onclick="irAPagina('/Vistas/reportes.html')">
+                    <img src="/Imagenes/ajuste.png" alt="Imagen 5">
+                    <h5>Ajustes</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/Js/menu.js"></script>
+</body>
+</html>

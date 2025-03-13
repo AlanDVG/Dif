@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/login.css">
+  <script src="https://kit.fontawesome.com/54ccffddb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="row w-75">
+      <!-- Side 1: Login Form -->
+      <div class="col-md-6 login-form p-4">
+        <h3 class="mb-4">Bienvenidos</h3>
+        <form onsubmit="return validarFormulario(event)">
+          <div class="mb-3">
+              <label for="username" class="form-label">Usuario</label>
+              <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                  <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario" required>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                  <input type="password" class="form-control" id="password" name="contra" placeholder="Ingresa tu contraseña" required>
+                  <button type="button" class="btn btn-outline-secondary" id="Password"></button>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100" id="submit-btn">Aceptar</button>
+          
+      </form>
+      <div id="loading-spinner" class="spinner-container" style="display: none;">
+              <div class="spinner"></div>
+              <p>Cargando...</p>
+          </div>
+      </div>
+      <!-- Side 2: Info Panel -->
+      <div class="col-md-6 info-panel d-flex flex-column justify-content-center align-items-center text-white p-4">
+        <h3></h3>
+        <p class="text-center">.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/Js/login.js"></script>
+</body>
+</html>

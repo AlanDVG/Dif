@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Diario de Terapia Física</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    .header {
+      background-color: #EAEAEA;
+      font-weight: bold;
+    }
+    .main-title {
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <h2 class="main-title">SISTEMA DE INFORMACIÓN DE SERVICIOS PRESTADOS<br>REGISTRO DIARIO DE TERAPIA FÍSICA</h2>
+
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Diario de Terapia Física</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 8px;
+        text-align: center;
+      }
+      .header {
+        background-color: #EAEAEA;
+        font-weight: bold;
+      }
+      .main-title {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        border: none;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+  
+  <div>
+    <h2 class="main-title">SISTEMA DE INFORMACIÓN DE SERVICIOS PRESTADOS<br>REGISTRO DIARIO DE TERAPIA FÍSICA</h2>
+  
+    <!-- Tabla de información del centro -->
+    <table style="width:100%; margin-top: 20px;">
+      <tr>
+        <td style="width: 20%;">Clave del Centro:</td>
+        <td colspan="2" style="width: 50%;"><input type="text"></td>
+        <td style="width: 15%;">Fecha:</td>
+        <td style="width: 15%;"><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Nombre del Centro de Rehabilitación:</td>
+        <td colspan="2"><input type="text"></td>
+        <td>Firma:</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>No. de Credencial:</td>
+        <td colspan="4"><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Nombre Completo del Terapeuta Físico:<br>(Apellido paterno, materno y nombre(s))</td>
+        <td colspan="4"><input type="text"></td>
+      </tr>
+    </table>
+  
+    <!-- Tabla principal -->
+    <table style="width:100%; margin-top: 20px;">
+      <thead>
+        <tr>
+          <th rowspan="2">No. de Folio</th>
+          <th rowspan="2">No. de Expediente</th>
+          <th colspan="10" class="header">Grupo por edad y sexo</th>
+          <th colspan="2" class="header">Tipo de Consulta</th>
+          <th colspan="9" class="header">Modalidades</th>
+        </tr>
+        <tr>
+          <th>0-5 M</th><th>0-5 H</th><th>6-14 M</th><th>6-14 H</th>
+          <th>15-17 M</th><th>15-17 H</th><th>18-29 M</th><th>18-29 H</th>
+          <th>30-59 M</th><th>30-59 H</th>
+          <th>1a Vez</th><th>Subsec.</th>
+          <th>Hidroterapia</th><th>Medios Físicos</th><th>Electroterapia</th><th>Mecanoterapia</th>
+          <th>Terapia Grupal</th><th>Programa de casa</th><th>Orientación y Movilidad</th>
+          <th>Cámara de estimulación multisensorial</th><th>Programa de estimulación múltiple temprana</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas de datos -->
+        <tr>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td>
+          <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+        </tr>
+        <!-- Añadir más filas aquí si es necesario -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" class="header">TOTAL</td>
+          <td colspan="21"><input type="text"></td>
+        </tr>
+      </tfoot>
+    </table>
+  
+    <!-- Tabla de terapias -->
+    <table style="width:50%; margin-top: 20px;">
+      <tr>
+        <td rowspan="2" class="header">TERAPIAS</td>
+        <td class="header">1a. Vez</td>
+        <td class="header">Subsc.</td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Solicitadas"></td>
+        <td><input type="text" placeholder="Otorgadas"></td>
+      </tr>
+    </table>
+  </div>
+  
+  </body>
+  </html>
+  
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/principal.css">
+    <title>Página de Ejemplo</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="img">
+            <img src="/Imagenes/img1.png" alt="Imagen 4">
+        </div>
+    </header>    
+    <!-- Contenido central -->
+    <main>
+        <div class="container">
+            <h2 class="text-center mt-4">Opciones</h2>
+            
+            <!-- Primera fila de imágenes -->
+            <div class="gallery-container">
+                <div class="gallery-item" onclick="irAPagina('/Vistas/reportes.html')">
+                    <img src="/Imagenes/documento.png" alt="Imagen 1">
+                    <h5>Registros</h5>
+                </div>
+                <div class="gallery-item" onclick="irAPagina('pagina2.html')">
+                    <img src="/Imagenes/informe.png" alt="Imagen 2">
+                    <h5>Reportes</h5>
+                </div>
+            </div>
+        </div>
+        <script>
+            function irAPagina(pagina) {
+                window.location.href = pagina;
+            }
+        </script>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

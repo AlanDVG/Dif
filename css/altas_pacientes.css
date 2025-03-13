@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.table-wrapper {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-title {
+    background: #435d7d;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+.table-title h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.table-title .btn {
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.table th {
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: #435d7d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.modal-header {
+    background-color: #435d7d;
+    color: white;
+}
+
+/* Botones */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Paginación */
+.pagination {
+    float: right;
+    margin: 0;
+}
+
+.pagination .page-link {
+    color: #333;
+}
+
+/* Checkbox personalizado */
+.custom-checkbox input:checked ~ label:before {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+    .container {
+        margin-top: 10px;
+    }
+
+    .table-wrapper {
+        padding: 15px;
+    }
+
+    .table-title h2 {
+        font-size: 22px;
+    }
+
+    .pagination {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .table-wrapper {
+        padding: 10px;
+    }
+
+    .table-title h2 {
+        font-size: 20px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .pagination {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .table-wrapper {
+        padding: 5px;
+    }
+
+    .table-title h2 {
+        font-size: 18px;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 5px 0;
+    }
+
+    .table-title .btn {
+        margin-left: 5px;
+    }
+
+    .pagination {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .table-wrapper {
+        padding: 10px;
+    }
+
+    .table-title h2 {
+        font-size: 16px;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 9px;
+        padding: 3px 0;
+    }
+
+    .pagination {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .table-title .btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .table-wrapper {
+        padding: 10px 5px;
+    }
+
+    .table-title h2 {
+        font-size: 14px;
+    }
+
+    .table {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+
+    .pagination {
+        float: none;
+        text-align: center;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* Estilo para el encabezado */
+header {
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+.img img {
+    width: 230px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 0; /* Asegura que esté pegado al lado izquierdo */
+}
+
+footer {
+    background-color: #d72929;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+
+/* Estilo para el contenedor de botones */
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Ajustado para mejor espaciado */
+    justify-content: center; /* Centra los elementos */
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Ajusta el tamaño máximo */
+    text-align: center;
+  }
+  
+  .home-item {
+    cursor: pointer;
+    width: 55px; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid #000000; /* Color de borde más profesional */
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #ffffff; /* Fondo blanco para destacar */
+  }
+  
+  .home-item img {
+    width: 68%; /* Ajusta el ancho a su contenedor */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .home-item:hover {
+    transform: scale(1.1);
+    background-color: #e9ecef; /* Fondo más claro al pasar el mouse */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .home-container {
+        max-width: 100%; /* Ajusta el ancho para pantallas más pequeñas */
+        gap: 15px; /* Espaciado más compacto */
+    }
+  
+    header {
+        flex-direction: column; /* Alineación vertical */
+        text-align: center;
+    }
+  }
+  h5 {
+    font-size: 34px;  /* Tamaño grande */
+    font-weight: bold; /* Negrita */
+    color: #333;  /* Color oscuro para buena visibilidad */
+    margin-bottom: 15px; /* Espacio en la parte inferior */
+    text-align: center;
+}
+
+  
